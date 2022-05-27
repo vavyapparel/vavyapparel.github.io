@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vavy</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileImage" content="assets/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+   
+    
+
+
+
+  </head>
+  <body>
+    <div class="row justify-content-center fixed-top text-center">
+        <div class="col-4">
+            <a type="button" onclick="setFullVolume()">
+                <img src="assets/gif/playmusic.gif" width="30px" alt="playmusic"></a>
+        </div>
+        <div class="col-4">
+            <a type="button" onclick="setNullVolume()">
+                <img src="assets/gif/mutemusic.gif" width="30px" alt="mutemusic"></a>
+        </div>
+    </div>
+    <!--div>
+        <audio id="mute" autoplay="true" loop="true">
+            <source src="assets/music/23553710_trap-bass-edm_by_paul-velchev_preview_01.ogg" type="audio/ogg">
+        </audio>   
+    </div-->
+    <iframe src="assets/music/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="mute" autoplay loop>
+        <source src="assets/music/23553710_trap-bass-edm_by_paul-velchev_preview_01.mp3" type="audio/mp3">
+    </audio>
+    <!--HEADER-->
+    <div class="mt-50 p-5 text-center justify-content-center" id="header" style="width: 100%;
+    height: 100vh;
+    background: url(assets/gif/bgheaders.gif) center center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 3px 30px #0e0e0e9d;
+    border-radius: 30px;">
+        
+    </div>
+    <!--HEADER AKHIR-->
+    <!--SELAMAT DATANG-->
+    <section class="welcome text-center">
+        <div class="container">
+            <div class="row fw-bold">
+                <h1 data-aos="fade-up" data-aos-duration="1500">WELCOME TO</h1>
+                <h1 class="boldy" style="margin-top: -25px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL</B></h1>
+                <p class="desc" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="300">Kami menerima pembuatan jersey satuan, lusinan, sampai ribuan. Dengan harga yang sangat terjangkau kami siap melayani pesanan anda dengan cepat. Karena kami didukung tenaga ahli yang berpengalaman dan tentunya dengan peralatan yang sangat memadai.
+                Kami mempunyai tim design grafis yang handal,sehingga kamu bebas request gambar yang kamu inginkan! cawwww</p>
+            </div>
+            <div class="row text-center" width="100%" >
+                <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+            </div>
+        </div>
+    </section>
+    <!--SELAMAT DATANG AKHIR-->
+    <!--SPECIAL FROM MUVA-->
+    <section class="special text-center">
+        <div class="container">
+            <div class="row">
+                <h1 class="headspace" data-aos="fade-up" data-aos-duration="1500">SPECIAL FROM</h1>
+                <h1 class="boldy" style="margin-top: -25px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL</B></h1>
+            </div>
+            <div class="row">
+                <!--img src="assets/gif/special.gif" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="300" width="100%" alt="SpecialFromVavy"-->
+                <video class="rounded-5" width="100%" height="" autoplay="" loop="" muted="false" playsinline="" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="300">
+                    <source src="assets/video/special.mp4" type="video/mp4"></video>
+            </div>
+            <div class="row">
+                <p class="desc fw-bold">Kami mempunyai tim design grafis yang handal,sehingga kamu bebas request gambar yang kamu inginkan. Free design!!</p>
+            </div>
+            <div class="row">
+                <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+            </div>
+        </div>
+    </section>
+    <!--SPECIAL FROM MUVA-->
+    <!--KENAPA HARUS BIKIN DI MUVA-->
+    <section class="kenapa text-center">
+        <div class="container">
+            <div class="row">
+                <h1 class="headspace" data-aos="fade-up" data-aos-duration="1500">KENAPA HARUS BIKIN JERSEY DI</h1>
+                <h1 class="boldy" style="margin-top: -25px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL?</B></h1>
+            </div>
+            <div class="row">
+                <img src="assets/gif/kenapa.gif" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            </div>
+            <div class="row">
+                <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+            </div>
+        </div>
+    </section>
+    <!--KENAPA HARUS BIKIN DI MUVA-->
+    <!--DESIGN YOUR FUTURE-->
+    <section class="dyf text-center" data-aos="fade-up" data-aos-duration="3000" style="border-radius: 30px; box-shadow: 0px 3px 30px #0e0e0e9d;">
+        <div class="container text-center">
+            <div class="row perkontenan h-100 g-0">
+                <div class="col-sm-6">
+                  <div class="bg-300 p-4 h-100 d-flex flex-column justify-content-center">
+                    <h4 class="" style="margin-top: 30px;">MAKE YOUR CHOICE!</h4>
+                    <h1 class="boldy" style="margin-top: -20px;"><b>DESIGN YOUR FUTURE</b></h1>
+                    <p class="butbet fw-bold ">With Vavy Apparel</p>
+                    <div class="d-grid gap-2 d-md-block"><a class="btn btn-lg btn-dark" href="https://lynk.id/vavyindonesia" target="_blank" role="button">Contact us</a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6" >
+                  <div class=" vidstrips">
+                      <img style="margin-bottom: 30px; margin-top: 30px;" class="card-img rounded-5" src="assets/gif/strips.gif" autoplay="" loop="" muted="" playsinline="" alt="...">
+                      </img>
+                  </div>
+                </div>
+            
+        </div>
+    </section>
+    <!--DESIGN YOUR FUTURE-->
+    <div class="row" style="margin-top: 50px;">
+        <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+    </div>
+    <!--DESCIPTION-->
+    <section class="deskripsi text-center ">
+        <div class="container">
+            <div class="row headspace fw-bold">
+                <p data-aos="fade-right" data-aos-duration="1500">Hasil print yang sangat tajam dan cerah membuat kamu terlihat lebih profesional.</p>
+                <p data-aos="fade-left" data-aos-duration="1500">
+                    Kami menggunakan mesin terbaik dan tinta original,sehingga gambar yang dihasilkan sangat tajam dan cerah.Dan satu lagi yang paling penting adalah kualitas jahit yang memang standar distro</p>
+            </div>
+            <div class="row">
+                <img src="assets/img/sizechart-img.jpg" data-aos="zoom-in" data-aos-duration="1500" class="rounded-5" alt="sizechart">
+            </div>
+            <br>
+            <div class="row">
+                <img src="assets/img/PENGIRIMAN.png" alt="pengiriman">
+            </div>
+        </div>
+        <div class="linkig">
+            <h5>Follow Instagram kami untuk tahu update terbaru!</h5>
+        </div>
+        <div class="tombol-wa d-grid gap-2 col-6 mx-auto">
+            <a href="https://instagram.com/vavy.id" target="_blank">
+            <button class="btn btn-lg btnig" type="button">INSTAGRAM</button></a>
+        </div>
+        <div class="tombol-wa d-grid gap-2 col-6 mx-auto">
+            <a href="https://api.whatsapp.com/send?phone=6281283116344&amp;text=Halo%20kak!%20saya%20tertarik%20dengan%20Vavy%20Apparel!" target="_blank">
+            <button class="btn btn-lg btnwa" type="button">WHATSAPP</button></a>
+        </div>
+    </section>
+    <!--DESCIPTION-->
+    <!--KATALOG-->
+    <section class="katalog text-center">
+        <div class="row">
+            <div class="main_simple text-center headspace">
+                <h3 style="margin-top: 30px;" data-aos="fade-up" data-aos-duration="1500">KATALOG OFFICIAL</h3>
+                <h3 class="boldy" style="margin-top: -20px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL?</B></h3>
+                <p><a href="assets/album/album.html" class="fw-bold" target="_blank" data-aos="zoom-in" data-aos-delay="1000">KLIK DISINI!</a></p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+        </div>
+    </section>
+    <!--KATALOG AKHIR-->
+    <!--MATERIAL DIGUNAKAN-->
+    <section class="bahan text-center" >
+        <div class="container text-center" >
+            <div class="row">
+                <h3 data-aos="fade-up" data-aos-duration="1500">MATERIAL YANG DIGUNAKAN</h3>
+                <h3 class="boldy" style="margin-top: -20px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL</B></h3> 
+            </div>
+            <div class="row h-100 align-items-center g-2" style="margin-top: 20px;">
+                <div class="col-sm-6 col-md-4 mb-4 mb-md-0 h-100 ">
+                    <div class="card-span h-100 text-white"><img class="img-fluid rounded-5 h-100" src="assets/img/dbenzema.png" data-aos="zoom-in-down" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4 mb-md-0 h-100">
+                    <div class="card-span h-100 text-white"><img class="img-fluid rounded-5 h-100" src="assets/img/dmilano.png" data-aos="zoom-in-down" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4 mb-md-0 h-100">
+                    <div class="card-span h-100 text-white"><img class="img-fluid rounded-5 h-100" src="assets/img/dmu.png" data-aos="zoom-in-down" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MATERIAL DIGUNAKAN AKHIR-->
+    <!--VIDEO TEASER-->
+    <section class="bahan text-center" style="border-radius: 30px; box-shadow: 0px 3px 30px #0e0e0e9d; margin-top: 50px;">
+        <div class="container text-center">
+            <div class="row ">
+                <h3 style="margin-top: 30px;" data-aos="fade-up" data-aos-duration="1500">FREE Customer Teaser Video from</h3>
+                <h3 class="boldy" style="margin-top: -20px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL</B></h3> 
+            </div>
+            <div class="row h-100 align-items-center g-2">
+                <div class="col-sm-6 col-sm-2 mb-2 mb-sm-0 h-100">
+                    <div class="card-span h-100 text-white"><video class="card-img rounded-5 h-100" src="assets/video/ahsan-ts.mp4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" controls="" playsinline="" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-2 mb-2 mb-sm-0 h-100">
+                    <div class="card-span h-100 text-white"><video class="card-img rounded-5 h-100" src="assets/video/bri-ts.mp4" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="100" controls="" playsinline="" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-2 mb-2 mb-sm-0 h-100">
+                    <div class="card-span h-100 text-white"><video class="card-img rounded-5 h-100" src="assets/video/cibunut-ts.mp4" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="100" controls playsinline="" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-2 mb-2 mb-sm-0 h-100">
+                    <div class="card-span h-100 text-white"><video class="card-img rounded-5 h-100" src="assets/video/pacific-ts.mp4" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="100" controls playsinline="" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-2 mb-2 mb-sm-0 h-100">
+                    <div class=" card-span h-100 text-white"><video class="card-img rounded-5 h-100" src="assets/video/bribodas-ts.mp4" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="100" controls playsinline="" alt="...">
+                        <div class="card-img-overlay ps-0">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="assets/gif/pembatasgif.gif" style="margin-bottom: 30px; margin-top: 30px;" alt="pembatasgif">
+            </div>
+        </div>
+    </section>
+    <!--VIDEO TEASER-->
+    <!--jadilah bagian--> 
+    <section class="welcome text-center">
+        <div class="container">
+            <div class="row fw-bold">
+                <h3  style="margin-top: 30px;" data-aos="fade-up" data-aos-duration="1500">JADILAH BAGIAN</h3>
+                <h3 class="boldy" style="margin-top: -20px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><B>VAVY APPAREL & SPORTWEAR</B></h3>
+                <p data-aos="fade-left" data-aos-delay="500">Tampil keren Bersama Vavy Apparel, dengan bahan yang nyaman dan berkelas serta desain yang unik dan menarik.</p>
+            </div>
+            <div>
+                <video class="rounded-5" width="100%" height="" autoplay="" loop="" muted="false" playsinline="">
+                    <source src="assets/video/square.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    </section>
+    <!--jadilah bagian AKHIR--> 
+    <!--footer contact-->
+    <section class="text-center text-white" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        <div class="container footers">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="assets/icon/lokasi.svg.png" width="50px" alt="">
+                    <h3 style="margin-top: 15px;">ALAMAT</h3>
+                    <p>Jl. Taman Cibaduyut Indah No 68</p>
+                    <p style="margin-top: -20px;">Kab Bandung - Indonesia</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/icon/telp.svg.png" width="50px" alt="">
+                    <h3 style="margin-top: 15px;">TELEPON</h3>
+                    <p>(+62) 812 8311 6344</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/icon/amplop.svg.png" width="50px" alt="">
+                    <h3 style="margin-top: 15px;">EMAIL</h3>
+                    <p>vavy.id@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--footer contact--> 
+
+    <div class="row">
+        <img src="assets/gif/pembatasgif.gif" alt="pembatasgif">
+    </div>
+
+    <section id="company" class="company">
+        <div class="container">
+            <div class="row">
+                <div class="main_company roomy-100 text-center">
+                    <h3 class="text-uppercase">VAVY APPAREL</h3>
+                    <p class="fw-bold" style="margin-top: -10px;"><i>Official Website</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="main_footer p-top-50 p-bottom-80">
+                    <div class=" text-center sm-text-center">
+                        <p class="wow fw-bold fadeInRight animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+                            copywrighted
+                            <a target="_blank" href="index.html">c</a> 
+                            2021. Vavy Indonesia
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right sm-text-center sm-m-top-20">
+                        <ul class="list-inline">
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--navbar bottom wa-->
+    <div class="animwa fixed-bottom text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="500"  style="position: fixed;">
+        <a href="https://api.whatsapp.com/send?phone=6281283116344&amp;text=Halo%20kak!%20saya%20tertarik%20dengan%20Vavy%20Apparel!" target="_blank" >
+            <img src="assets/gif/wawa.gif" width="150px">
+    </div>
+      <!--navbar bottom wa-->
+    
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/bgmusic.js"></script>
+  </body>
+</html>
